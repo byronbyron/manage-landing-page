@@ -1,5 +1,6 @@
 .form-group {
     display: flex;
+    position: relative;
 }
 
 .form-control {
@@ -17,4 +18,26 @@
     -moz-appearance: none;
     appearance: none;
     border-radius: 44px;
+}
+
+.form-msg {
+    font-size: 0.625rem;
+    font-style: italic;
+    color: indianred;
+    position: absolute;
+    top: 50px;
+    left: 24px;
+}
+
+::placeholder {
+  color: $gray;
+}
+
+[aria-invalid="true"] {
+    border-color: indianred;
+
+    &::placeholder {
+      color: indianred;
+      opacity: 0.8;
+    }
 }

@@ -12,6 +12,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_collapse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/collapse */ "./src/js/components/collapse.js");
 /* harmony import */ var _components_collapse__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_collapse__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
+/* harmony import */ var _components_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form */ "./src/js/components/form.js");
+/* harmony import */ var _components_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_form__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -35,6 +38,38 @@ function toggleCollapse(e) {
   this.classList.toggle('active');
   document.body.classList.toggle('menu');
   target.classList.toggle('show');
+}
+
+/***/ }),
+
+/***/ "./src/js/components/form.js":
+/*!***********************************!*\
+  !*** ./src/js/components/form.js ***!
+  \***********************************/
+/***/ (() => {
+
+var form = document.querySelector('.js-form');
+var msg = document.querySelector('.form-msg');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(e) {
+  e.preventDefault();
+
+  if (!validateEmail(e.target.email.value)) {
+    event.target.email.setAttribute("aria-invalid", "true");
+    msg.style.display = 'block';
+  } else {
+    event.target.email.setAttribute("aria-invalid", "false");
+    msg.style.display = 'none';
+  }
+}
+
+function validateEmail(value) {
+  var input = document.createElement('input');
+  input.type = 'email';
+  input.required = true;
+  input.value = value;
+  return typeof input.checkValidity === 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(value);
 }
 
 /***/ }),

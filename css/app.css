@@ -655,7 +655,8 @@ p {
 @media (min-width: 991px) {
   .footer {
     text-align: left;
-    padding-top: 4.5rem;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
   }
   .footer .container {
     position: relative;
@@ -1218,6 +1219,7 @@ p {
 }
 .form-group {
   display: flex;
+  position: relative;
 }
 
 .form-control {
@@ -1235,6 +1237,43 @@ p {
   -moz-appearance: none;
   appearance: none;
   border-radius: 44px;
+}
+
+.form-msg {
+  font-size: 0.625rem;
+  font-style: italic;
+  color: indianred;
+  position: absolute;
+  top: 50px;
+  left: 24px;
+}
+
+::-moz-placeholder {
+  color: #9095a7;
+}
+
+:-ms-input-placeholder {
+  color: #9095a7;
+}
+
+::placeholder {
+  color: #9095a7;
+}
+
+[aria-invalid=true] {
+  border-color: indianred;
+}
+[aria-invalid=true]::-moz-placeholder {
+  color: indianred;
+  opacity: 0.8;
+}
+[aria-invalid=true]:-ms-input-placeholder {
+  color: indianred;
+  opacity: 0.8;
+}
+[aria-invalid=true]::placeholder {
+  color: indianred;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=app.css.map*/
