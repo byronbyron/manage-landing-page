@@ -922,7 +922,7 @@ p {
   .hero {
     background: none;
     padding-top: 3.25rem;
-    padding-bottom: 6.5rem;
+    padding-bottom: 6.75rem;
   }
 
   .hero__body {
@@ -1049,7 +1049,7 @@ p {
 
 @media (min-width: 768px) {
   .featured {
-    padding-bottom: 6rem;
+    padding-bottom: 6.5rem;
   }
 }
 @media (min-width: 991px) {
@@ -1060,8 +1060,7 @@ p {
     font-size: 1rem;
     line-height: 1.7;
     max-width: none;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 2.25rem 0;
     padding-left: 6rem;
   }
   .featured-list li::after {
@@ -1120,6 +1119,10 @@ p {
 }
 
 @media (min-width: 768px) {
+  .testimonials {
+    padding-bottom: 11.25rem;
+  }
+
   .testimonial__title {
     margin-bottom: 3.75rem;
   }
