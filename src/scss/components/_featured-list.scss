@@ -62,6 +62,20 @@
 @media (min-width: 768px) {
     .featured {
         padding-bottom: 6.5rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            background: url("../images/bg-tablet-pattern.svg") no-repeat left bottom;
+            background-size: 814px;
+            width: 814px;
+            height: 814px;
+            position: absolute;
+            bottom: -420px;
+            left: -510px;
+            z-index: -1;
+        }
     }
 }
 
