@@ -660,6 +660,18 @@ p {
   border-color: #f6866a;
 }
 
+.btn-secondary {
+  color: #f25f3a;
+  background-color: white;
+  border-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 0.75rem -0.5rem rgba(0, 0, 0, 0.1);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
 .btn-block {
   display: block;
   width: 100%;
@@ -883,6 +895,10 @@ p {
     padding-left: 0;
   }
 }
+.testimonials {
+  padding-bottom: 2.75rem;
+}
+
 .testimonial__title {
   margin-bottom: 3rem;
 }
@@ -974,6 +990,55 @@ p {
 
   .swiper-pagination {
     display: none;
+  }
+}
+.cta__section {
+  min-height: 25.25rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("../images/bg-simplify-section-mobile.svg") no-repeat left top 3rem #f25f3a;
+}
+
+.cta__title {
+  font-size: 2.375rem;
+  font-weight: 500;
+  color: white;
+}
+
+.cta__button {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta__section {
+    min-height: 13.75rem;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-position: right -250px bottom 0;
+  }
+  .cta__section .container {
+    width: 100%;
+  }
+  .cta__section .row {
+    display: flex;
+    align-items: center;
+  }
+  .cta__section .col {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+
+  .cta__title {
+    font-size: 2.375rem;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .cta__button {
+    text-align: right;
   }
 }
 
