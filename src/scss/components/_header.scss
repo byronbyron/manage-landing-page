@@ -1,3 +1,8 @@
+.header {
+    position: relative;
+    z-index: 10;
+}
+
 .header__navbar {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -20,7 +25,7 @@
 
 .header__nav-collapse {
     position: absolute;
-    top: 6.5rem;
+    top: 6.375rem;
     left: 0;
     width: 100%;
     padding: 1.875rem 1rem;

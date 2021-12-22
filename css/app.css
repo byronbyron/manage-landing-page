@@ -353,6 +353,8 @@ body {
   background: url("../images/bg-tablet-pattern.svg") no-repeat right -140px top -120px white;
   background-size: 460px;
   min-width: 375px;
+  min-height: 100vh;
+  position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -394,12 +396,39 @@ p {
   text-align: center;
 }
 
+.menu-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5) 700px);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.menu .menu-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (min-width: 991px) {
   body {
     background-position: right -150px top -160px;
     background-size: 820px;
   }
+
+  .menu-overlay {
+    display: none;
+  }
 }
+.header {
+  position: relative;
+  z-index: 10;
+}
+
 .header__navbar {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
@@ -421,7 +450,7 @@ p {
 
 .header__nav-collapse {
   position: absolute;
-  top: 6.5rem;
+  top: 6.375rem;
   left: 0;
   width: 100%;
   padding: 1.875rem 1rem;
