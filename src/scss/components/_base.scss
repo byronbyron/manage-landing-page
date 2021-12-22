@@ -9,6 +9,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.7;
+    color: $gray;
     background: url("../images/bg-tablet-pattern.svg") no-repeat right -140px top -120px $white;
     background-size: 460px;
     min-width: 375px;
@@ -53,6 +54,15 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+.max-w-prose {
+    max-width: 40ch;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-overlay {

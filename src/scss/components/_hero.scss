@@ -34,11 +34,15 @@
 }
 
 @media (min-width: 768px) {
+    .hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     .hero__row {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        margin: 2.5rem 0;
     }
 
     .hero__title {
@@ -66,10 +70,8 @@
 @media (min-width: 991px) {
     .hero {
         background: none;
-    }
-
-    .hero__row {
-        margin: 3.25rem 0;
+        padding-top: 3.25rem;
+        padding-bottom: 5rem;
     }
 
     .hero__body {
@@ -86,7 +88,6 @@
 
     .hero__text {
         max-width: 360px;
-        line-height: 1.6;
         margin-bottom: 2.25rem;
     }
 }
