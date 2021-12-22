@@ -859,6 +859,11 @@ p {
   padding: 0.5625rem 0 0.5625rem 5rem;
 }
 
+@media (min-width: 768px) {
+  .featured {
+    padding-bottom: 6rem;
+  }
+}
 @media (min-width: 991px) {
   .featured-list {
     margin: 0;
@@ -879,7 +884,7 @@ p {
   }
 }
 .testimonial__title {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .testimonial__group {
@@ -901,6 +906,7 @@ p {
 }
 
 .testimonial__card {
+  margin: 3rem 0;
   padding: 4rem 1.125rem 1.5rem 1.125rem;
   background-color: #fafafa;
   position: relative;
@@ -919,6 +925,56 @@ p {
 .testimonial__quote {
   font-size: 0.875rem;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .testimonial__title {
+    margin-bottom: 3.75rem;
+  }
+
+  .testimonial__group {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .testimonial__card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .testimonial__name {
+    margin-bottom: 1.25rem;
+  }
+
+  .testimonial__quote {
+    font-size: 1rem;
+  }
+}
+.swiper-slide {
+  max-width: 327px;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background-color: white !important;
+  border: 1px solid #f25f3a;
+  box-sizing: content-box;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f25f3a !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    max-width: 540px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map*/

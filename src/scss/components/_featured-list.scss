@@ -59,6 +59,12 @@
     padding: 0.5625rem 0 0.5625rem 5rem;
 }
 
+@media (min-width: 768px) {
+    .featured {
+        padding-bottom: 6rem;
+    }
+}
+
 @media (min-width: 991px) {
     .featured-list {
         margin: 0;

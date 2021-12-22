@@ -1,0 +1,24 @@
+.swiper-slide {
+    max-width: 327px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: $white !important;
+    border: 1px solid $bright-red;
+    box-sizing: content-box;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $bright-red !important;
+}
+
+@media (min-width: 768px) {
+    .swiper-slide {
+        max-width: 540px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
