@@ -1,0 +1,92 @@
+.hero {
+    overflow: hidden;
+    background: url("../images/bg-tablet-pattern.svg") no-repeat right -180px bottom 0;
+    background-size: 320px;
+}
+
+.hero__title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.hero__image {
+    img {
+        display: block;
+        max-width: 580px;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.hero__body {
+    text-align: center;
+    margin-bottom: 5.5rem;
+}
+
+.hero__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: $gray;
+    margin-bottom: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .hero__row {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 2.5rem 0;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__body {
+        flex: 1 0 50%;
+        max-width: 50%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .hero__image {
+        flex: 1 0 50%;
+        max-width: 50%;
+
+        img {
+            max-width: 570px;
+            width: 110%;
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .hero {
+        background: none;
+    }
+
+    .hero__row {
+        margin: 3.25rem 0;
+    }
+
+    .hero__body {
+        margin-top: -2.25rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+        line-height: 1.15;
+        letter-spacing: -2px;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .hero__text {
+        max-width: 360px;
+        line-height: 1.6;
+        margin-bottom: 2.25rem;
+    }
+}
