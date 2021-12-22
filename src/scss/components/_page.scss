@@ -27,3 +27,22 @@
         line-height: 1.7;
     }
 }
+
+@media (min-width: 991px) {
+    .page__body {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+    
+    .page__title {
+        line-height: 1.2;
+        margin-top: 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .page__text {
+        max-width: 350px;
+    }
+}

@@ -2,6 +2,7 @@
     overflow: hidden;
     background: url("../images/bg-tablet-pattern.svg") no-repeat right -180px bottom 0;
     background-size: 320px;
+    padding-bottom: 5.5rem;
 }
 
 .hero__title {
@@ -23,7 +24,6 @@
 
 .hero__body {
     text-align: center;
-    margin-bottom: 5.5rem;
 }
 
 .hero__text {
@@ -71,7 +71,7 @@
     .hero {
         background: none;
         padding-top: 3.25rem;
-        padding-bottom: 5rem;
+        padding-bottom: 6.5rem;
     }
 
     .hero__body {
