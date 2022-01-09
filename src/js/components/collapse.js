@@ -11,7 +11,7 @@ function toggleCollapse(e) {
         ? this.setAttribute('aria-expanded', 'false')
         : this.setAttribute('aria-expanded', 'true')
 
-    this.classList.toggle('active');
+    btn.classList.toggle('active');
     document.body.classList.toggle('menu');
 
     target.classList.toggle('show');
